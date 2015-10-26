@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficIntersection", "TrafficIntersection\TrafficIntersection.csproj", "{1E044CAA-973B-4857-8BAD-101D14DA813C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficIntersection.Tests", "TrafficIntersection.Tests\TrafficIntersection.Tests.csproj", "{D16ADBE4-9C13-45D4-893C-1680516C403A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficIntersection.ConsoleApp", "TrafficIntersection.ConsoleApp\TrafficIntersection.ConsoleApp.csproj", "{E592F0CD-22A4-4BF5-B2FE-190904600D17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E044CAA-973B-4857-8BAD-101D14DA813C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E044CAA-973B-4857-8BAD-101D14DA813C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E044CAA-973B-4857-8BAD-101D14DA813C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E044CAA-973B-4857-8BAD-101D14DA813C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16ADBE4-9C13-45D4-893C-1680516C403A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16ADBE4-9C13-45D4-893C-1680516C403A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16ADBE4-9C13-45D4-893C-1680516C403A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16ADBE4-9C13-45D4-893C-1680516C403A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E592F0CD-22A4-4BF5-B2FE-190904600D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E592F0CD-22A4-4BF5-B2FE-190904600D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E592F0CD-22A4-4BF5-B2FE-190904600D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E592F0CD-22A4-4BF5-B2FE-190904600D17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
