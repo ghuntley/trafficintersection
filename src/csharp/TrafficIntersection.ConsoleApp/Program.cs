@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reactive.Concurrency;
+using System.Threading;
 using Serilog;
 
 namespace TrafficIntersection.ConsoleApp
@@ -21,7 +22,10 @@ namespace TrafficIntersection.ConsoleApp
             intersection.WestLight.Subscribe(x => Log.Information("West is now {x}", x));
             intersection.EastLight.Subscribe(x => Log.Information("East is now {x}", x));
 
-            Console.ReadLine();
+            while (true)
+            {
+                Thread.Sleep(TimeSpan.FromSeconds(1));
+            }
         }
     }
 }
