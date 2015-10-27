@@ -8,7 +8,10 @@ namespace TrafficIntersection.ConsoleApp
     {
         private static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration().WriteTo.ColoredConsole().CreateLogger();
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.ColoredConsole()
+                .WriteTo.RollingFile("TrafficController-{Date}.log")
+                .CreateLogger();
 
             var trafficController = new TrafficController(Scheduler.Default);
 
