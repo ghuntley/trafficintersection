@@ -1,6 +1,7 @@
 # Traffic Intersection [![Build status](https://ci.appveyor.com/api/projects/status/vmwsabmeub8r14c5?svg=true)](https://ci.appveyor.com/project/ghuntley/trafficintersection)
 
-[![Play Video](https://i.imgur.com/izcC3UH.png)](https://ghuntley.wistia.com/medias/4z2sn5u49c)
+<!--[![Play Video](https://i.imgur.com/izcC3UH.png)](https://ghuntley.wistia.com/medias/4z2sn5u49c)
+-->
 
 # Specification
 You are required to provide the code for an application that simulates a set of traffic lights at
@@ -26,6 +27,21 @@ an intersection. The traffic lights are designated (N, S) and (E, W) like a comp
 ## Assumptions
 * No turning bays, otherwise additional traffic lights or rows within a traffic light will need to be installed.
 * No pedestrians/crosswalks.
+
+# Implementation
+
+Because there is no delay at the `RedRed` stage (although there should be due to safety) the lights were implemented as follows:
+
+
+State         | North-South | East-West | Delay
+------------- | ------------|-----------|-------
+0 - RedRed    | Red         | Red       | 0
+1 - RedGreen  | Red         | Green     | 270
+2 - RedYellow | Red         | Yellow    | 30
+3 - GreenRed  | Green       | Red       | 270
+4 - YellowRed | Yellow      | Red       | 30
+
+In the above implementation `RedRed` exists purely as the default state when the controller and traffic lights are initialized. It could be argued that it is not actually even needed. If there was a delay introduced for `RedRed` then a additional state change would be needed between `RedYellow` and `GreenRed`.
 
 # Unit Testing
 * This repository has been integrated with AppVeyor which performs builds of the solution after [every commit](https://ci.appveyor.com/project/ghuntley/trafficintersection) to ensure the builds are always green. In the root of this repository there is a file called [appveyor.yml](https://github.com/ghuntley/trafficintersection/blob/master/appveyor.yml) which controls the configuration.
