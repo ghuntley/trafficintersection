@@ -48,7 +48,7 @@ In the above implementation `RedRed` exists purely as the default state when the
 # Unit Testing
 * This repository has been integrated with AppVeyor which performs builds of the solution after [every commit](https://ci.appveyor.com/project/ghuntley/trafficintersection) to ensure the builds are always green. In the root of this repository there is a file called [appveyor.yml](https://github.com/ghuntley/trafficintersection/blob/master/appveyor.yml) which controls the configuration.
 
-* A virtual clock that can be programmatically rewound or fast-forwarded is passed into the constructor of the TrafficLightController. It is specifically used to verify the that the state sequence is functions correctly whilst ensuring that the unit tests complete fast without having to wait a full 10 minutes on the system clock.
+* A virtual clock that can be programmatically rewound or fast-forwarded is passed into the constructor of the TrafficLightController. It is specifically used to verify the that the state sequence is functioning correctly whilst ensuring that the unit tests complete fast without having to wait a full 10 minutes on the system clock.
 
 		xUnit.net console test runner (32-bit .NET 4.0.30319.42000)
 		Copyright (C) 2015 Outercurve Foundation.
