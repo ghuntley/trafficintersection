@@ -3,6 +3,8 @@
 <!--[![Play Video](https://i.imgur.com/izcC3UH.png)](https://ghuntley.wistia.com/medias/4z2sn5u49c)
 -->
 
+![Traffic Intersection](https://raw.githubusercontent.com/ghuntley/trafficintersection/master/assets/trafficintersection.png)
+
 # Specification
 You are required to provide the code for an application that simulates a set of traffic lights at
 an intersection. The traffic lights are designated (N, S) and (E, W) like a compass.
